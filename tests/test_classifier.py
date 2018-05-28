@@ -50,7 +50,7 @@ class ClassifierTestCase(unittest.TestCase):
 
         classifier.train()
         assert isinstance(classifier.model, SVC)
-        assert classifier.classify([[6.2, 2.8, 4.8, 1.8]]) == 'virginica'
+        assert classifier.classify([[6.2, 3.4, 5.4, 2.3]]) == 'virginica'
         assert classifier.classify([[5.5, 2.5, 4.0, 1.3]]) == 'versicolor'
         assert classifier.classify([[5.1, 3.4, 1.5, 0.2]]) == 'setosa'
 
